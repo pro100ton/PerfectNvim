@@ -1,0 +1,26 @@
+{
+  "implog": {
+    "prefix": "implog",
+    "body": [
+      "import logging",
+      "_log = logging.getLogger(__name__)"
+    ],
+    "description": "Snippet for importing logger"
+  },
+  "Log event": {
+    "prefix": "logevent",
+    "body": [
+      "_log.error('${1:delimiter}' * 60)",
+      "_log.error(${2})",
+      "_log.error('${1:delimiter}' * 60)"
+    ],
+    "description": "Snippet for inserting error log"
+  },
+  "Log debug": {
+    "prefix": "logdebug",
+    "body": [
+      "_log.debug(${1:deug_body})"
+    ],
+    "description": "Snippet for inserting debug log"
+  }
+}
